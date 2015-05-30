@@ -42,7 +42,7 @@
           <label for="bio">Biography:</label>
           <textarea id="bio" name="user_bio" spellcheck="true"></textarea>
       
-          <label for="occupation">Combat Class:</label>
+          <label for="occupation">Class:</label>
           <select id="occupation" name="user_occupation">
             <option>Please Choose One:</option>
             <optgroup label="Martial">
@@ -51,17 +51,24 @@
               <option value="rogue">Rogue</option>
               <option value="wizard">Wizard</option>
             </optgroup>
+            <optgroup label="Support">
+              <option value="cleric">Cleric</option>
+              <option value="bard">Bard</option>
+              <option value="priest">Priest</option>
+            </optgroup>
           </select>
           
           <label>Professions:</label>
-          <input type="checkbox" id="development" value="interest_development"
-                 name="user_interest"><label class="light" for="development">Cooking</label><br>
-          <input type="checkbox" id="development" value="interest_development"
-                 name="user_interest"><label class="light" for="development">Engineering</label><br>
-          <input type="checkbox" id="development" value="interest_development"
-                 name="user_interest"><label class="light" for="development">Blacksmith</label><br>
-
           
+          <input type="checkbox" id="cooking" value="interest_development"name="user_interest">
+          <label class="light" for="cooking">Cooking</label><br>
+          
+          <input type="checkbox" id="engineering" value="interest_development"name="user_interest">
+          <label class="light" for="engingeering">Engineering</label><br>
+          
+          <input type="checkbox" id="blacksmith" value="interest_development"name="user_interest">
+          <label class="light" for="blacksmith">Blacksmith</label><br>
+
         </fieldset>
         
         <button type="submit">Sign Up</button>

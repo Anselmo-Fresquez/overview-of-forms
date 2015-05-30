@@ -5,16 +5,21 @@
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
-  color: #384047;
+  font-family: 'Philosopher', 'Nunito', sans-serif;
+  color: #ba8800;
+  text-shadow: 0px 1px 01.5px rgb(106, 71, 15);
 }
 
 form {
   max-width: 300px;
   margin: 10px auto;
   padding: 10px 20px;
-  background: #f4f7f8;
+  border: 5px ridge gold;
+  background: #812009;
   border-radius: 8px;
+  box-shadow: inset 0px 0px 4px 3px rgba(96, 67, 0, 0.71),
+              1px 1px 5px 1px rgba(81, 0, 211, 0.38);
+  
 }
 
 h1 {
@@ -35,17 +40,18 @@ input[type="url"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
-  border: 1px solid black;
+  border: none;
   font-size: 16px;
   height: auto;
   margin: 0;
   outline: 0;
   padding: 15px;
   width: 100%;
-  background-color: #e8eeef;
+  background-color: #d8eeef;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+  border-radius: 0.5em;
 }
 
 input[type="radio"],
@@ -61,17 +67,25 @@ select {
 
 button {
   padding: 19px 39px 18px 39px;
-  color: #FFF;
-  background-color: #4bc970;
+ 
+  background-color: rgba(70, 1, 129, 0.87);
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #3ac162;
+  border: 1px solid rgba(41, 0, 106, 0.38);
   border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.2) inset;
   margin-bottom: 10px;
+  height: 3.5em;
+}
+
+button:active {
+  box-shadow: 0 5px 0 rgba(255,255,255,1) inset;
+  margin-top: 0.25em;
+  height: 3.25em;
+  box-shadow: 0 0 0 white;
 }
 
 fieldset {
@@ -95,7 +109,7 @@ label.light {
 }
 
 .number {
-  background-color: #5fcf80;
+  background-color: #b47c00;
   color: #fff;
   height: 30px;
   width: 30px;
@@ -105,7 +119,7 @@ label.light {
   line-height: 30px;
   text-align: center;
   text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-  border-radius: 100%;
+  border-radius: 25%;
 }
 
 @media screen and (min-width: 480px) {
